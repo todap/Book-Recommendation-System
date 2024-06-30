@@ -1,50 +1,34 @@
-# 📚 Book Recommendation System
+### 📚 Book Recommendation System
+Welcome to the Book Recommendation System! This application helps you find popular books in your favorite genres and recommends the best book based on your reading preferences.
 
-This Streamlit-based application provides personalized book recommendations based on user-specified genres and preferences. It utilizes the Meta-Llama-3-8B-Instruct model from Hugging Face for natural language processing tasks.
-
-## Features
-
-- Search for popular books by genre
-- Filter top 10 books from the search results
-- Provide personalized book recommendations based on user preferences
-
-## How it Works
-
-1. **Genre Search**: Enter a genre to fetch 100 popular book titles in that category.
-2. **Top 10 Filter**: The system automatically filters the top 10 books from the initial list.
-3. **Personalized Recommendation**: Enter your reading preferences to receive a tailored book suggestion from the top 10 list.
-
-## Installation
-
-1. Clone this repository:
+### Features
+Search Popular Books by Genre: Get a list of 100 popular books in any genre.
+Filter Top 10 Books: Narrow down the list to the top 10 most popular books.
+Personalized Recommendation: Select the best book based on your specific reading preferences.
+### Installation
+## Prerequisites
+Python 3.8 or higher
+Streamlit
+Requests
+Dotenv
+Langchain
+### Clone the Repository
+```bash
 git clone https://github.com/yourusername/book-recommendation-system.git
-Copy
-2. Install the required packages:
+cd book-recommendation-system
+```
+### Create and Activate a Virtual Environment
+```
+python -m venv venv
+source venv/bin/activate   # On Windows use `venv\Scripts\activate
+```
+### Install Dependencies
+```pip
 pip install -r requirements.txt
-Copy
-3. Set up your Hugging Face API key in the code:
-```python
-headers = {"Authorization": "Bearer YOUR_HUGGING_FACE_API_KEY"}
-Usage
-Run the Streamlit app:
-Copystreamlit run app.py
-Then follow the on-screen instructions to get book recommendations.
-Dependencies
+```
 
-streamlit
-requests
-langchain
-
-API
-This project uses the Hugging Face API to access the Meta-Llama-3-8B-Instruct model. Make sure to replace the API key in the code with your own.
-
-## Environment Variables
-
-This project uses the following environment variables:
-
-- `HUGGINGFACE_TOKEN`: Your Hugging Face API token
-
-To use the application, you need to set this environment variable. You can do this by creating a `.env` file in the project root with the content:
-HUGGINGFACE_TOKEN=your_token_here
-Copy
-Replace `your_token_here` with your actual Hugging Face API token.
+### Set Up Environment Variables
+Create a .env file in the root directory and add your Huggingface API token:
+```
+HUGGINGFACE_TOKEN=your_huggingface_api_token
+```
