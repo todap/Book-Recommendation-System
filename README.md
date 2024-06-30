@@ -37,3 +37,14 @@ langchain
 
 API
 This project uses the Hugging Face API to access the Meta-Llama-3-8B-Instruct model. Make sure to replace the API key in the code with your own.
+
+## Environment Variables
+
+This project uses the following environment variables:
+
+- `HUGGINGFACE_TOKEN`: Your Hugging Face API token
+
+To use the application, you need to set this environment variable. You can do this by creating a `.env` file in the project root with the content:
+HUGGINGFACE_TOKEN=your_token_here
+Copy
+Replace `your_token_here` with your actual Hugging Face API token.
