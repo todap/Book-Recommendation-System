@@ -29,6 +29,16 @@ pip install -r requirements.txt
 
 ### Set Up Environment Variables
 Create a .env file in the root directory and add your Huggingface API token:
-```
+```plaintext
 HUGGINGFACE_TOKEN=your_huggingface_api_token
 ```
+### Usage
+Run the Streamlit application:
+```bash
+streamlit run app.py
+```
+
+### Using the Application
+- Enter a Genre: Start by typing a genre in the input box and press Enter.
+- View Top 10 Books: The application will fetch and display the top 10 books in the specified genre.
+- Enter Your Preferences: Provide your reading preferences (e.g., "adventure, strong female lead") and get a personalized book recommendation.
