@@ -139,6 +139,7 @@ if genre:
                         best_book = user_preference_tool.run(user_input)
                         if best_book:
                             st.success(f"\nRecommended Book: {best_book}")
+                            st.caption("Thank You for using the Book Recommendation System! 📚🎉")
                         else:
                             st.warning("Unable to select a book based on the given preferences. Please try again with different preferences.")
             else:
